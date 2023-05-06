@@ -9,9 +9,8 @@ body {
 }
 
 .container {
-    margin: auto;
-    margin-top: 110px;
-    width: 60%;
+    margin: 5vh 15vh;
+    width: 80vw;
     height: 700px;
      border: 3px solid purple;
     padding: 10px;
@@ -20,6 +19,7 @@ body {
      -webkit-border-radius: 60px; 
     border-radius: 60px;
     display: flex;
+    flex-shrink: 0;
 }
 
 .banner {
@@ -64,7 +64,10 @@ h5 {
 .content {
     display: flex;
     flex-direction: column;
+    width: 100%;
     margin-left: -10px;
+    overflow: scroll;
+    margin-right: -11px;
 }
 
 form {
@@ -89,9 +92,8 @@ label {
 }
 
 .inputs {
-    background-color: rgb(136, 0, 136, 0.10);
-    width: 744px;
-    flex-shrink: 1;
+    background: linear-gradient(0.25turn, rgb(136, 0, 136, 0.15), rgb(136, 0, 136, 0.0001));
+    width: 100%;
     box-shadow: 0px 5px 9px 1px rgba(136, 0, 136, .3);
 }
 
@@ -108,6 +110,10 @@ label {
 
 a {
     text-decoration: none;
+}
+
+a:hover {
+    color:rgba(136, 0, 136, .3)
 }
 
 .signup, .login {
